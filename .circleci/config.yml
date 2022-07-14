@@ -9,6 +9,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
+      - run: mkdir -p workspace
       - run:
           name: "Save output"
           command: echo 'hello world' > workspace/output.txt
