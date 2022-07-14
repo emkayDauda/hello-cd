@@ -20,11 +20,11 @@ jobs:
   print_output_file:
     docker:
       - image: cimg/base:stable
-     steps:
-      - attach_workspace:
-          at: /tmp/workspace
-          
-      - run: cat workspace/output.txt
+    steps:
+    - attach_workspace:
+        at: /tmp/workspace
+        
+    - run: cat workspace/output.txt
     
           
 
