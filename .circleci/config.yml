@@ -20,8 +20,6 @@ jobs:
   say-world:
     docker:
       - image: cimg/base:stable
-    requires:
-      - say-print
     steps:
       - checkout
       - run:
@@ -44,3 +42,5 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - say-world
+      - say-print
