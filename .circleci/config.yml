@@ -43,6 +43,6 @@ workflows:
     jobs:
       - say-hello
       - say-world:
-        requires:
-          - say-print
+          requires:
+            - say-print
       - say-print
